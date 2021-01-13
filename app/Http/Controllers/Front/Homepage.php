@@ -25,6 +25,7 @@ class Homepage extends Controller
 
         view()->share('pages', Page::where('status',1)->orderby('order','ASC')->get());
         view()->share('categories',Category::where('status',1)->orderby('id','DESC')->get());
+        view()->share('config',Config::find(1));
     }
 
     // index function returns list of articles with slider

@@ -108,7 +108,7 @@ class ArticleController extends Controller
         if($request->hasFile('image')){
              $imageName = str::slug($request->title).'.'.$request->image->getclientoriginalextension();
              $request->image->move(public_path('uploads'),$imageName);
-             $article->image = 'uploads/'.$imageName;
+             $article->image = '/uploads/'.$imageName;
         }
             $article->save();
             toastr()->success('Article updated successfully!');

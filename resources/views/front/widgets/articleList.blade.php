@@ -6,7 +6,7 @@
       <h2 class="post-title">
         {{$article->title}}
       </h2>
-        <img src="{{$article->image}}" >
+        <img style="max-width: 70%" src="{{$article->image}}" >
       <h3 class="post-subtitle">
         {{-- {{ substr(strip_tags($article->content), 0, 50,'..') }} --}}
         {!! \Illuminate\Support\Str::limit($article->content, 75, '...') !!}
