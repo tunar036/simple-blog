@@ -8,6 +8,3 @@
 </div>
 
 @endsection
-
-
-{{-- new --}}
